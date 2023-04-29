@@ -3,7 +3,7 @@ A small SVG React component to generate a Donut Chart!
 
 # How it looks
 
-![](example/example.gif)
+![](https://github.com/gutioliveira/react-small-donut-chart/blob/main/example/example.gif?raw=true)
 
 # Install
 
