@@ -1,11 +1,13 @@
 {
   "name": "react-small-donut-chart",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Donut Chart SVG component for React",
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
   "types": "./lib/esm/index.d.ts",
-  "files": ["/lib"],
+  "files": [
+    "/lib"
+  ],
   "scripts": {
     "build": "npm run build:esm && npm run build:cjs",
     "build:esm": "tsc",

@@ -60,19 +60,16 @@ const DonutChart = ({ radius, values, colors, strokeWidth }: Props) => {
   };
 
   const resizeEvent = () => {
-    setHighlight(highlight - 1);
+    setHighlight((previousValue) => previousValue - 1);
   };
 
   useEffect(() => {
     resizeEvent(); // force a rerender when component is mounted to make sure that center is correct
-  }, []);
-
-  useEffect(() => {
     window.addEventListener('resize', resizeEvent);
     return () => {
       window.removeEventListener('resize', resizeEvent);
     }
-  }, [highlight]);
+  }, []);
 
   return (
     <svg
